@@ -1,0 +1,26 @@
+{
+  "name": "About Me",
+  "version": "0.0.1",
+  "authors": [
+    "re757575@gmail.com>"
+  ],
+  "description": "About Me in Material Design",
+  "keywords": [
+  ],
+  "license": "",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.2",
+    "core-scaffold": "Polymer/core-scaffold#~0.5.2",
+    "paper-input": "Polymer/paper-input#~0.5.2",
+    "paper-fab": "Polymer/paper-fab#~0.5.2"
+  }
+}
