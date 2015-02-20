@@ -16,8 +16,8 @@
 
     color = randomColor();
     cat = randomCat();
-    uuid = color + '-' + cat;
-    avatar = 'images/' + cat + '.jpg';
+    uuid = 'Alex.Dai';//color + '-' + cat;
+    avatar = 'https://avatars1.githubusercontent.com/u/1502976?v=3&s=460';
 
     function showNewest() {
         //document.querySelector('core-scaffold').$.headerPanel.scroller.scrollTop = document.querySelector('.chat-list').scrollHeight;

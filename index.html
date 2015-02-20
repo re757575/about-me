@@ -10,20 +10,18 @@
 	<meta name="mobile-web-app-capable" content="yes">
 	<title>About Me</title>
 
-	<link rel="icon" sizes="192x192" href="images/app-icon-192.png">
-	<link rel="icon" sizes="128x128" href="images/app-icon-128.png">
-	<link rel="apple-touch-icon" sizes="128x128" href="images/app-icon-128.png">
-	<link rel="apple-touch-icon-precomposed" sizes="128x128" href="images/app-icon-128.png">
+	<link rel="icon" sizes="192x192" href="images/1502976-192.jpg">
+	<link rel="icon" sizes="128x128" href="images/1502976-128.jpg">
+	<link rel="apple-touch-icon" sizes="128x128" href="images/1502976-128.jpg">
+	<link rel="apple-touch-icon-precomposed" sizes="128x128" href="images/1502976-128.jpg">
 	
 	<!-- Polymer -->
 	<script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
 
-	<link rel="import" href="bower_components/pubnub-polymer/pubnub-element.html">
 	<link rel="import" href="bower_components/core-scaffold/core-scaffold.html">
 	<link rel="import" href="bower_components/core-item/core-item.html"> 
 	<link rel="import" href="bower_components/paper-input/paper-input.html">
 	<link rel="import" href="bower_components/paper-fab/paper-fab.html">
-	<link rel="import" href="">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -39,32 +37,43 @@
 	    </core-toolbar>
 
 	    <section layout vertical id="onlineList">
-	    	<core-item label="Online Now" class="subdue" layout horizontal center></core-item>
-
-	   		<template repeat="{{cat in cats}}">
-	   			<core-item label="{{cat}}"></core-item>
-	   		</template>
+	    	<core-item label="首頁" class="subdue" layout horizontal center></core-item>
+	        <core-item label="關於我" layout horizontal center><a href="http://127.0.0.1:3000"></a></core-item>
+	        <core-item label="作品" layout horizontal center><a href="http://127.0.0.1:3000"></a></core-item>
 	    </section>
   	</core-header-panel>
 
   	<div tool layout horizontal flex>
-  		<div flex>Kitteh Anonymous</div>
+  		<div flex>關於我</div>
   		<core-icon icon="account-circle"></core-icon><span>{{occupancy}}</span>
   	</div>
 
-  	<section layout vertical fit id="chat">
-		<div flex class="chat-list">
-			<template repeat="{{message in messageList}}">
-				<x-chat-list color="{{message.color}}" avatar="{{message.avatar}}" username="{{message.uuid}}" text="{{message.text}}"  status="{{message.status}}" timestamp="{{message.timestamp}}"></x-chat-list>
-			</template>
-		</div>
-		<div class="shim"></div>
+	<article layout vertical fit>
+		 <hgroup>
+		  <h1>Apples</h1>
+		  <h2>Tasty, delicious fruit!</h2>
+		 </hgroup>
+		 <p>The apple is the pomaceous fruit of the apple tree.</p>
+		 <section>
+		  <h1>Red Delicious</h1>
+		  <p>These bright red apples are the most common found in many
+		  supermarkets.</p>
+		 </section>
+		 <section>
+		  <h1>Granny Smith</h1>
+		  <p>These juicy, green apples make a great filling for
+		  apple pies.</p>
+		 </section>
+	</article>
 
+  	<section layout vertical fit id="chat">
+		<div flex ></div>
 		<div class="send-message" layout horizontal>
-	    	<paper-input flex label="Type message..." id="input" value="{{input}}" on-keyup="{{checkKey}}"></paper-input>
-	    	<paper-fab icon="send" id="sendButton" on-tap="{{sendMyMessage}}"></paper-fab>
+	    	<div flex></div>
+	    	<paper-fab icon="arrow-drop-up" id="sendButton" on-tap="{{sendMyMessage}}"></paper-fab>
 	    </div>
   	</section>
+
 </core-scaffold>
 
 </template>
